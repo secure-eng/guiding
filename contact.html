@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Contact Us | Guiding Hands</title>
+
+<link rel="icon" type="image/png" href="images/icon.png" />
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+  <div class="top-inner">
+
+    <p>
+    <img src="icons/email.png" alt="Email Icon" class="sidebar-icon"> kate@guidinghandsseniorplacementservices.com
+  </p>
+    <p>
+    <img src="icons/phone.png" alt="Phone Icon" class="sidebar-icon"> (848) 992-3273
+  </p>
+
+  </div>
+  
+</div>
+
+<header>
+  <div class="navbar">
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Guiding Hands Logo">
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="navMenu">
+       <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Booking</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- CONTACT INFO -->
+
+<section class="container">
+  <h2 class="section-title">Get In Touch</h2>
+
+  <p style="max-width:800px;margin:auto;text-align:center;line-height:1.8">
+    We are here to guide you every step of the way. Contact us today to begin your journey toward quality care.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Phone</h3>
+       <p>
+    <img src="icons/phone.png" alt="Phone Icon" class="sidebar-icon"> (848) 992-3273
+  </p>
+    </div>
+
+    <div class="card">
+      <h3>Email</h3>
+       <p>
+    <img src="icons/email.png" alt="Email Icon" class="sidebar-icon"> kate@guidinghandsseniorplacementservices.com
+  </p>
+    </div>
+
+    <div class="card">
+      <h3>Office</h3>
+      <p> <img src="icons/location.png" alt="Location Icon" class="sidebar-icon">New Jersey, USA</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FORM -->
+
+<section class="container animate">
+
+<h2 class="section-title">Book an Appointment</h2>
+
+
+<form id="appointmentForm"
+      class="appointment-form"
+      action="send-mail.php"
+      method="POST">
+
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label>Phone</label>
+
+    <div class="phone-field">
+
+      <select name="country_code" required>
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+      </select>
+
+      <input type="tel" name="phone" pattern="[0-9]{6,12}" required>
+
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label>Service</label>
+
+   <select name="service" required>
+  <option value="">-- Select a Service --</option>
+  <option>Assisted Living</option>
+  <option>Home Care</option>
+  <option>Hospice</option>
+  <option>Memory Care</option>
+  <option>Medicaid & Financial Services</option>
+  <option>Case Management</option>
+</select>
+
+  </div>
+
+
+  <div class="form-group">
+    <label>Date</label>
+    <input type="date" name="date" required>
+  </div>
+
+
+  <div class="form-group">
+    <label>Notes</label>
+    <textarea name="notes" rows="4"></textarea>
+  </div>
+
+<!-- Honeypot (Spam Protection) -->
+<input type="text" name="website" style="display:none">
+
+  <button type="submit" id="submitBtn" class="btn">
+
+    <span id="btnText">Book Appointment</span>
+    <span id="loader" style="display:none">Sending...</span>
+
+  </button>
+
+
+  <p id="formMessage" style="display:none;margin-top:15px;font-weight:600"></p>
+
+</form>
+
+
+</section>
+
+
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/18489923273" target="_blank" class="whatsapp-btn">
+  <img src="https://img.icons8.com/color/48/whatsapp--v1.png">
+</a>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-left">
+     <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Booking</a>
+  </div>
+
+
+  <div class="footer-center">
+    <p>© 2026 Guiding Hands Placement Services</p>
+    <p>Brought To Life By Kosgei</p>
+  </div>
+
+
+  <div class="footer-right">
+    <a href="https://www.facebook.com/profile.php?id=61584635497904&mibextid=wwXIfr&rdid=xoVAVm8JKrGXPpPp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DvFPEDbkh%2F%3Fmibextid%3DwwXIfr#" target="_blank" class="social-icon">Facebook</a>
+    <a href="https://www.instagram.com/guidinghandsnj?utm_source=ig_web_button_share_sheet" target="_blank" class="social-icon">Instagram</a>
+  </div>
+
+</footer>
+
+
+<script>
+const form = document.getElementById("appointmentForm");
+const message = document.getElementById("formMessage");
+const loader = document.getElementById("loader");
+const btnText = document.getElementById("btnText");
+
+form.addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  loader.style.display = "inline";
+  btnText.style.display = "none";
+
+  message.style.display = "none";
+
+  const formData = new FormData(form);
+
+  fetch("send-mail.php", {
+    method: "POST",
+    body: formData
+  })
+
+  .then(res => res.text())
+  .then(data => {
+
+    loader.style.display = "none";
+    btnText.style.display = "inline";
+
+    message.style.display = "block";
+
+    if(data.trim() === "success"){
+
+      message.style.color = "green";
+      message.textContent = "Appointment booked successfully!";
+      form.reset();
+
+    } else {
+
+      message.style.color = "red";
+      message.textContent = "Error sending. Try again later.";
+
+      console.error(data);
+
+    }
+
+  })
+
+  .catch(err => {
+
+    loader.style.display = "none";
+    btnText.style.display = "inline";
+
+    message.style.display = "block";
+    message.style.color = "red";
+    message.textContent = "Connection error.";
+
+  });
+
+});
+</script>
+
+
+
+<!-- MENU -->
+
+<script>
+
+function toggleMenu(){
+  document.getElementById("navMenu")
+  .classList.toggle("active");
+}
+
+function toggleMenu(){
+  document.getElementById("navMenu")
+    .classList.toggle("active");
+}
+// SCROLL ANIMATION
+
+const animated = document.querySelectorAll(".animate");
+
+window.addEventListener("scroll",()=>{
+
+  animated.forEach(el=>{
+
+    const pos = el.getBoundingClientRect().top;
+
+    if(pos < window.innerHeight-100){
+      el.classList.add("show");
+    }
+
+  });
+
+});
+
+</script>
+
+
+</body>
+</html>

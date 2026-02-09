@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/icon.png">
+  <title>Our Services | Guiding Hands</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+  <div class="top-inner">
+
+    <p>
+    <img src="icons/email.png" alt="Email Icon" class="sidebar-icon"> kate@guidinghandsseniorplacementservices.com
+  </p>
+    <p>
+    <img src="icons/phone.png" alt="Phone Icon" class="sidebar-icon"> (848) 992-3273
+  </p>
+
+  </div>
+  
+</div>
+
+<header>
+   <div class="navbar">
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Booking</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="container">
+  <h2 class="section-title">Our Senior Care Services</h2>
+
+  <p style="text-align:center; max-width:800px; margin:auto; line-height:1.8;">
+    At Guiding Hands Placement Services, we provide a full range of senior care solutions designed
+    to ensure comfort, safety, dignity, and emotional wellbeing for every senior.
+  </p>
+
+  <div class="cards" style="margin-top:50px;">
+    <div class="card">
+	 <img src="icons/assisted.png" alt="Assisted Living Icon" class="service-icon">
+      <h3>Assisted Living</h3>
+      <p>Helping families find safe, comfortable, and engaging assisted living communities tailored to their needs.</p>
+    </div>
+
+    <div class="card">
+	 <img src="icons/home.png" alt="Homecare Icon" class="service-icon">
+      <h3>Home Care</h3>
+      <p>Providing in-home support services that promote independence, safety, and personalized care for seniors.</p>
+    </div>
+
+    <div class="card">
+	<img src="icons/hospice.png" alt="Hospice Icon" class="service-icon">
+      <h3>Hospice</h3>
+      <p>Offering compassionate end-of-life care focused on comfort, dignity, and emotional support for both seniors and families.</p>
+    </div>
+
+    <div class="card">
+	<img src="icons/memory.png" alt="Memory Care Icon" class="service-icon">
+      <h3>Memory Care</h3>
+      <p>Specialized programs and environments designed to support individuals with dementia or Alzheimer's safely and respectfully.</p>
+    </div>
+
+    <div class="card">
+	<img src="icons/medicaid.png" alt="Medicaid Icon" class="service-icon">
+      <h3>Medicaid & Financial Services</h3>
+      <p>Assisting families in navigating Medicaid, insurance, and financial planning to simplify access to senior care resources.</p>
+    </div>
+
+    <div class="card">
+	<img src="icons/case.png" alt="Case Management Icon" class="service-icon">
+      <h3>Case Management</h3>
+      <p>Coordinating medical care, support services, and community resources to ensure a smooth, safe, and quality care experience.</p>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/18489923273" target="_blank" class="whatsapp-btn">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/>
+</a>
+
+<footer>
+  <!-- Left: Page links -->
+  <div class="footer-left">
+     <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Booking</a>
+  </div>
+
+  <!-- Center: Copyright -->
+  <div class="footer-center">
+    <p>© 2026 Guiding Hands Placement Services.</p>
+	<p> Brought To Life By Kosgei.</p>
+  </div>
+
+  <!-- Right: Social media -->
+  <div class="footer-right">
+    <a href="https://www.facebook.com/profile.php?id=61584635497904&mibextid=wwXIfr&rdid=xoVAVm8JKrGXPpPp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DvFPEDbkh%2F%3Fmibextid%3DwwXIfr#" target="_blank" class="social-icon">Facebook</a>
+    <a href="https://www.instagram.com/guidinghandsnj?utm_source=ig_web_button_share_sheet" target="_blank" class="social-icon">Instagram</a>
+  </div>
+</footer>
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("active");
+}
+// Scroll animation
+const animatedElements = document.querySelectorAll(".animate");
+
+window.addEventListener("scroll", () => {
+  animatedElements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if(position < screenHeight - 100){
+      el.classList.add("show");
+    }
+  });
+});
+</script>
+<script>
+
+function toggleMenu(){
+  document.getElementById("navMenu")
+    .classList.toggle("active");
+}
+
+</script>
+</body>
+
+</html>
