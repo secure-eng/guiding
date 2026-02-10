@@ -177,7 +177,7 @@ nav a:hover::after{
 }
 
 .hero span {
-  color: #6cffc4;
+  color: #00c853;
 }
 
 .hero p {
@@ -613,3 +613,4 @@ footer a,
     grid-template-columns:1fr;
   }
 }
+
