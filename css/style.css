@@ -97,7 +97,7 @@ header{
 }
 
 .logo img{
-  height:55px;
+  height:100px;
 }
 
 /* ================= NAV ================= */
@@ -168,12 +168,12 @@ nav a:hover::after{
   color: white;
   position: relative;
   z-index: 2;
-  text-align: left; 
+  text-align: center; 
 }
 
 .hero h1 {
   font-size: clamp(3rem, 5vw, 4.5rem);
-  margin-bottom: 8px; 
+  margin-bottom: 5px; 
 }
 
 .hero span {
@@ -181,7 +181,7 @@ nav a:hover::after{
 }
 
 .hero p {
-  max-width: 550px;
+  max-width: 1000px;
   margin: 0 0 10px; 
   font-size: clamp(1.2rem, 1.5vw, 1.5rem);
   line-height: 1.5;
@@ -191,12 +191,12 @@ nav a:hover::after{
 @media (max-width: 768px) {
   .hero h1 {
     font-size: clamp(2.2rem, 6vw, 3.2rem);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .hero p {
     font-size: clamp(1.3rem, 3vw, 1.6rem);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -223,6 +223,21 @@ nav a:hover::after{
 }
 
 /* ================= SIDEBAR ================= */
+/* LIFT SIDEBAR */
+.sidebar {
+  margin-top: -25px;   /* adjust between -10px to -60px */
+}
+
+/* LIFT SERVICE CARDS SECTION */
+.service-cards {
+  margin-top: -20px;   /* adjust as needed */
+}
+
+/* LIFT ABOUT / PANEL SECTION */
+.panel {
+  margin-top: -20px;   /* adjust as needed */
+}
+
 
 .sidebar{
   background: var(--glass);
@@ -238,7 +253,7 @@ nav a:hover::after{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 320px; /* adjust if needed */
+  min-height: 300px; /* adjust if needed */
 }
 
 
@@ -253,7 +268,7 @@ nav a:hover::after{
   text-align:center;
   text-decoration:none;
   margin-top:10px;
-  font-weight:600;
+  font-weight:580;
   transition:.3s;
   transform:translateY(-6px);
 }
