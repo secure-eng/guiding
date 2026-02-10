@@ -9,19 +9,44 @@
 <body>
 <!-- ================= TOP BAR ================= -->
 
-<div class="top-bar">
-  <div class="top-inner">
+<div class="top-bar" style="white-space:nowrap; overflow:hidden; background:#6a0dad; padding:6px 0; color:white;">
 
-    <p>
-    <img src="icons/email.png" alt="Email Icon" class="sidebar-icon"> kate@guidinghandsseniorplacementservices.com
-  </p>
-    <p>
-    <img src="icons/phone.png" alt="Phone Icon" class="sidebar-icon"> (848) 992-3273
-  </p>
+  <div style="display:inline-block; animation:scroll 25s linear infinite;">
+
+    <span style="margin-right:80px;">
+      <img src="icons/email.png" class="sidebar-icon"> kate@guidinghandsseniorplacementservices.com
+    </span>
+
+    <span style="margin-right:80px;">
+      <img src="icons/phone.png" class="sidebar-icon"> (848) 992-3273
+    </span>
+
+    <span style="margin-right:80px;">
+      <img src="icons/location.png" class="sidebar-icon"> Serving: Ocean County | Monmouth County | Mercer County | Burlington County
+    </span>
+
+    <!-- DUPLICATE FOR SEAMLESS LOOP -->
+    <span style="margin-right:80px;">
+      <img src="icons/email.png" class="sidebar-icon"> kate@guidinghandsseniorplacementservices.com
+    </span>
+
+    <span style="margin-right:80px;">
+      <img src="icons/phone.png" class="sidebar-icon"> (848) 992-3273
+    </span>
+
+    <span style="margin-right:80px;">
+      <img src="icons/location.png" class="sidebar-icon"> Serving: Ocean County | Monmouth County | Mercer County | Burlington County
+    </span>
 
   </div>
-  
 </div>
+
+<style>
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
 
 <header>
    <div class="navbar">
@@ -150,3 +175,4 @@ function toggleMenu(){
 </body>
 
 </html>
+
