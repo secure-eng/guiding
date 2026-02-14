@@ -47,88 +47,190 @@
   100% { transform: translateX(-50%); }
 }
 </style>
-
+<!-- ================= HEADER ================= -->
 <header>
-  <div class="navbar">
-     <a href="index.html" class="logo">
-  <img src="images/logo.png" alt="Guiding Hands Logo">
-</a>
 
+  <div class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </a>
+
+    <!-- Hamburger for mobile -->
     <div class="hamburger" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
+    <!-- Navigation Menu -->
     <nav id="navMenu">
-         <a href="index.html" style="display:flex; align-items:center; gap:6px;">
-    <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
-      <path d="M12 3l9 8h-3v10h-12v-10h-3z"/>
-    </svg>
-    Home
-  </a>
+      <a href="index.html" style="display:flex; align-items:center; gap:6px;">
+        <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
+          <path d="M12 3l9 8h-3v10h-12v-10h-3z"/>
+        </svg>
+        Home
+      </a>
 
-  <a href="services.html" style="display:flex; align-items:center; gap:6px;">
-    <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
-      <path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7zm10-10l-7 4v-8l7 4zm-20 0l7-4v8l-7-4z"/>
-    </svg>
-    Services
-  </a>
+      <a href="services.html" style="display:flex; align-items:center; gap:6px;">
+        <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
+          <path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7zm10-10l-7 4v-8l7 4zm-20 0l7-4v8l-7-4z"/>
+        </svg>
+        Services
+      </a>
 
-  <a href="about.html" style="display:flex; align-items:center; gap:6px;">
-    <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
-      <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/>
-    </svg>
-    About
-  </a>
+      <a href="about.html" style="display:flex; align-items:center; gap:6px;">
+        <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
+          <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/>
+        </svg>
+        About
+      </a>
 
-  <a href="gallery.html" style="display:flex; align-items:center; gap:6px;">
-    <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
-      <path d="M21 19v-14h-18v14h18zm0-16c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-18c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h18zm-11 12l2.03-2.71 1.43 1.79 2.54-3.38 3 4h-12z"/>
-    </svg>
-    Gallery
-  </a>
-
-  <a href="contact.html" style="display:flex; align-items:center; gap:6px;">
-    <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
-      <path d="M20 4h-16c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2zm0 4l-8 5-8-5v-2l8 5 8-5v2z"/>
-    </svg>
-    Booking
-  </a>
+      <a href="gallery.html" style="display:flex; align-items:center; gap:6px;">
+        <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
+          <path d="M21 19v-14h-18v14h18zm0-16c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-18c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h18zm-11 12l2.03-2.71 1.43 1.79 2.54-3.38 3 4h-12z"/>
+        </svg>
+        Gallery
+      </a>
+      <a href="blog.php" style="display:flex; align-items:center; gap:6px; color:#6c4ba3;">
+  <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24" transform="rotate(-25)">
+    <path d="M3 17.25V21h3.75l11-11.03-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+  </svg>
+  Blog
+</a>
+      <a href="contact.html" style="display:flex; align-items:center; gap:6px;">
+        <svg width="18" height="18" fill="#00c853" viewBox="0 0 24 24">
+          <path d="M20 4h-16c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2zm0 4l-8 5-8-5v-2l8 5 8-5v2z"/>
+        </svg>
+        Booking
+      </a>
     </nav>
+
   </div>
+
 </header>
 
+<script>
+  function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+</script>
 
-<section class="container">
-  <h2 class="section-title">Our Story & Mission</h2>
-   <p style="text-align:center; max-width:800px; margin:auto; line-height:1.8;">
-    Guiding Hands Placement Services was founded by Catherine Fitzgerald and Kathleen Goodwin, with over 30 years of experience in healthcare. They started the service to help families navigate complex care decisions with clarity and confidence.
-  </p>
+
+<section class="container mission-section">
+  <h2 class="section-title">My WHY</h2>
+
+ <p class="intro-text">
+  My &ldquo;why&rdquo; for creating Guiding Hands Senior Placement Services was born from experience not theory.
+  After years in the medical field and walking through the healthcare system with my own family, I saw firsthand how confusing, fragmented, and overwhelming senior care can be. I witnessed the fear in families&rsquo; eyes when they were told their loved one needed &ldquo;more care.&rdquo; I felt the weight of second-guessing decisions. I saw seniors discharged without clear plans, families scrambling for answers, and vulnerable individuals not receiving the attention they truly deserved.
+  <br><br>
+  I realized something had to change.
+  <br><br>
+  My why is rooted in protecting dignity.
+  It&rsquo;s about ensuring seniors are not just placed, but properly placed.
+  It&rsquo;s about making sure families feel heard, educated and supported instead of rushed or pressured.
+  <br><br>
+  Guiding Hands was created because no family should feel alone when making life-altering decisions for someone they love. I wanted to be the calm in the chaos the steady voice that brings clarity, compassion, and advocacy to moments that feel overwhelming.
+  <br><br>
+  This isn&rsquo;t just a service.
+  It&rsquo;s a calling.
+  It&rsquo;s about changing healthcare by putting seniors first and walking beside families with heart, integrity, and purpose.
+</p>
 
 
-  <div class="cards">
+  <div class="top-row">
     
+    <!-- MISSION -->
     <div class="card">
       <img src="icons/mission.png" alt="Mission Icon" class="card-icon">
       <h3>Our Mission</h3>
-      <p>To support seniors and families with clear, compassionate guidance when making important care decisions.</p>
+
+      <ul class="styled-list">
+        <li>Place seniors in safe, appropriate environments that meet medical, emotional, and financial needs.</li>
+        <li>Educate families to make informed, confident decisions.</li>
+        <li>Advocate for dignity, respect, and quality of life.</li>
+        <li>Simplify healthcare transitions during times of crisis or change.</li>
+      </ul>
     </div>
 
+    <!-- VISION -->
     <div class="card">
       <img src="icons/vision.png" alt="Vision Icon" class="card-icon">
       <h3>Our Vision</h3>
-      <p>To be a trusted care advisory service known for integrity, professionalism and personalized support.</p>
-    </div>
 
-    <div class="card">
-      <img src="icons/values.png" alt="Values Icon" class="card-icon">
-      <h3>Our Values</h3>
-      <p>Compassion, honesty, respect and a commitment to putting people first in everything we do.</p>
+      <ul class="styled-list">
+        <li>Seniors are treated with dignity and individualized care.</li>
+        <li>Families feel supported, educated, and empowered.</li>
+        <li>Healthcare decisions are guided by advocacy and transparency.</li>
+        <li>Every placement truly meets a senior’s full needs.</li>
+      </ul>
     </div>
 
   </div>
+
+  <!-- VALUES FULL WIDTH -->
+  <div class="card values-card">
+    <img src="icons/values.png" alt="Values Icon" class="card-icon">
+    <h3>Our Values</h3>
+
+<ul class="values-list">
+
+  <li>
+    <img src="https://img.icons8.com/3d-fluency/94/like--v1.png" alt="Compassion Icon">
+    <div>
+      <strong>Compassion</strong><br>
+      Empathy and understanding in every interaction.
+    </div>
+  </li>
+
+  <li>
+    <img src="https://img.icons8.com/3d-fluency/94/prize.png" alt="Integrity Icon">
+    <div>
+      <strong>Integrity</strong><br>
+      Honest, ethical, and transparent guidance.
+    </div>
+  </li>
+
+  <li>
+    <img src="https://img.icons8.com/3d-fluency/94/shield.png" alt="Advocacy Icon">
+    <div>
+      <strong>Advocacy</strong><br>
+      Protecting dignity, safety, and respect.
+    </div>
+  </li>
+
+  <li>
+    <img src="https://img.icons8.com/3d-fluency/94/book.png" alt="Education Icon">
+    <div>
+      <strong>Education</strong><br>
+      Clear information for confident decisions.
+    </div>
+  </li>
+
+  <li>
+    <img src="https://img.icons8.com/3d-fluency/94/stethoscope.png" alt="Personalized Care Icon">
+    <div>
+      <strong>Personalized Care</strong><br>
+      Tailored support for every family.
+    </div>
+  </li>
+
+  <li>
+    <img src="https://img.icons8.com/3d-fluency/94/handshake.png" alt="Commitment Icon">
+    <div>
+      <strong>Commitment</strong><br>
+      Continued support beyond placement.
+    </div>
+  </li>
+
+</ul>
+
+
+  </div>
+
 </section>
+
 
 <a href="https://wa.me/18489923273" target="_blank" class="whatsapp-btn">
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/>
@@ -141,6 +243,7 @@
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="gallery.html">Gallery</a>
+	   <a href="blog.php">Blog</a>
       <a href="contact.html">Booking</a>
   </div>
 
@@ -182,5 +285,4 @@ window.addEventListener("scroll", () => {
 
 </body>
 </html>
-
 
